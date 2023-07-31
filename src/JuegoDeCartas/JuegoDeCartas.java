@@ -1,7 +1,9 @@
 package JuegoDeCartas;
 
 import Herramientas.Lector;
-import
+
+import java.awt.*;
+
 public class JuegoDeCartas {
 
     private Casino casino;
@@ -18,18 +20,22 @@ public class JuegoDeCartas {
         this.casino = new Casino();
         this.lector = new Lector();
         this.dinero = 0;
+        iniciarJuego();
     }
 
     public void iniciarJuego(){
-        dinero = lector.getDigit("Cuanto dinero tendra el jugador?");
+        dinero = lector.getDigitMin("Cuanto dinero tendra el jugador?", 151);
         System.out.println("Empezando el juego:");
+        barajar();
     }
 
     public void barajar(){
+        System.out.println("Barajando...");
         carta1 = casino.producirValorAzar();
         carta2 = casino.producirValorAzar();
         dibujante.dibujarCarta(dibujante.traducirRandom(carta1));
         dibujante.dibujarCarta(dibujante.traducirRandom(carta2));
+        apostar();
     }
 
     public void apostar(){
@@ -40,12 +46,13 @@ public class JuegoDeCartas {
             dibujante.dibujarCarta(dibujante.traducirRandom(cartaJugador));
             casino.ordernarCartas(carta1,carta2);
             if (carta1 > cartaJugador && carta2 < cartaJugador){
-                dinero =+ 50;
-                System.out.println("Has ganado! Ahora tienes " + String.valueOf(dinero) + " monedas!");
+                dinero += 50;
+                System.out.println("Has ganado! Ahora tienes " + dinero + " monedas!");
                 barajar();
             } else if(dinero > 150){
-                dinero =- 150;
-                System.out.println("Has perdido... Ahora tienes " + String.valueOf(dinero) + " monedas.");
+                dinero -= 150;
+                System.out.println("Has perdido... Ahora tienes " + dinero + " monedas.");
+                barajar();
             } else {
                 System.out.println("Te has quedado sin dinero... \n Juego Terminado");
             }

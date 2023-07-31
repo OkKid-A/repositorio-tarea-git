@@ -1,9 +1,9 @@
-import JuegoDeCartas.JuegoDeCartas;
+import JuegoDeCartas.*;
 
 public class Main {
     public static void main(String[] args){
-        MenuPrincipal menuPrincipal = new MenuPrincipal();
         JuegoDeCartas juegoDeCartas = new JuegoDeCartas();
+        MenuPrincipal menuPrincipal = new MenuPrincipal();
         menuPrincipal.menuJuegos();
     }
 }

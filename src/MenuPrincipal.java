@@ -1,11 +1,13 @@
+import Herramientas.Lector;
+
 import java.util.Scanner;
 
 public class MenuPrincipal {
 
 
+
     public static void menuJuegos(){
         Scanner sn = new Scanner(System.in);
-
         boolean salir = false;
         int opcion;
         while (!salir){
@@ -29,6 +31,7 @@ public class MenuPrincipal {
             opcion = sn.nextInt();
 
         }
+
 
     }
 }

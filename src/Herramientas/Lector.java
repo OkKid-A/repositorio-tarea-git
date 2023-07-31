@@ -42,6 +42,23 @@ private Scanner scanner;
         }
         return respuesta;
     }
+
+    public int getDigitMin(String pregunta, int limite){
+        String respuestaBruta;
+        int respuesta = 0;
+        System.out.println(pregunta);
+        try{
+            respuestaBruta = scanner.nextLine();
+            respuesta = Integer.parseInt(respuestaBruta);
+            if(respuesta < limite || respuesta > 10000){
+                throw new ArithmeticException("El numero no es valido.");
+            }
+        } catch(Exception e){
+            System.out.println("El dato no es aceptable");
+            getDigit(pregunta);
+        }
+        return respuesta;
+    }
 }
 
 

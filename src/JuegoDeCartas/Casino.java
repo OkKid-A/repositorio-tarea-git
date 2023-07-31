@@ -10,7 +10,7 @@ public class Casino {
     }
 
     public int producirValorAzar(){
-        int valor = azar.nextInt();
+        int valor = azar.nextInt(12);
         return valor;
     }
 
