@@ -27,12 +27,11 @@ private Scanner scanner;
        }
 
     public int getDigit(String pregunta, int limite){
-        String respuestaBruta;
+        String respuestaBruta = null;
         int respuesta = 0;
         System.out.println(pregunta);
         try{
-            respuestaBruta = scanner.nextLine();
-            respuesta = Integer.parseInt(respuestaBruta);
+            respuesta = scanner.nextInt();
             if(respuesta > limite || respuesta < 1){
                 throw new ArithmeticException("El numero debe ser 1 o 2.");
             }
@@ -56,6 +55,32 @@ private Scanner scanner;
         } catch(Exception e){
             System.out.println("El dato no es aceptable");
             getDigit(pregunta);
+        }
+        return respuesta;
+    }
+
+    public String getString(String pregunta){
+        System.out.println(pregunta);
+        String respuesta = null;
+        try {
+            respuesta = scanner.nextLine();
+            if (respuesta == ""){
+                throw new StringIndexOutOfBoundsException("La palabra es vacia o no valida.");
+            }
+        } catch (Exception e){
+            getString(pregunta);
+        }
+        return respuesta;
+    }
+
+    public char getChar(String pregunta){
+        System.out.println(pregunta);
+        char respuesta = ' ';
+        try {
+            respuesta = scanner.next("[a-zA-Z]").charAt(0);
+        } catch (Exception e){
+            System.out.println("Por favor inserte solo un caracter");
+            getChar(pregunta);
         }
         return respuesta;
     }
