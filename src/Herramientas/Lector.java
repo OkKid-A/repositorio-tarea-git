@@ -7,6 +7,7 @@ public class Lector {
     private int respuesta;
 private String respuestaEscrita;
 private Scanner scanner;
+private char respuestaChar;
 
     public Lector() {
         this.scanner = new Scanner(System.in);
@@ -27,19 +28,19 @@ private Scanner scanner;
        }
 
     public int getDigit(String pregunta, int limite){
-        String respuestaBruta = null;
         int respuesta = 0;
         System.out.println(pregunta);
+        scanner = new Scanner(System.in);
         try{
-            respuesta = scanner.nextInt();
-            if(respuesta > limite || respuesta < 1){
-                throw new ArithmeticException("El numero debe ser 1 o 2.");
+            this.respuesta = scanner.nextInt();
+            if(this.respuesta > limite || this.respuesta < 1){
+                throw new RuntimeException();
             }
         } catch(Exception e){
             System.out.println("El dato no es aceptable");
-            getDigit(pregunta);
+            getDigit(pregunta,limite);
         }
-        return respuesta;
+        return this.respuesta;
     }
 
     public int getDigitMin(String pregunta, int limite){
@@ -63,7 +64,8 @@ private Scanner scanner;
         System.out.println(pregunta);
         String respuesta = null;
         try {
-            respuesta = scanner.nextLine();
+            respuesta = scanner.next().toLowerCase();
+            scanner.nextLine();
             if (respuesta == ""){
                 throw new StringIndexOutOfBoundsException("La palabra es vacia o no valida.");
             }
@@ -75,14 +77,16 @@ private Scanner scanner;
 
     public char getChar(String pregunta){
         System.out.println(pregunta);
-        char respuesta = ' ';
+        char respuestaChar = ' ';
+        scanner = new Scanner(System.in);
         try {
-            respuesta = scanner.next("[a-zA-Z]").charAt(0);
+            this.respuestaChar = scanner.next("[a-zA-Z]").charAt(0);
+            scanner.nextLine();
         } catch (Exception e){
             System.out.println("Por favor inserte solo un caracter");
             getChar(pregunta);
         }
-        return respuesta;
+        return this.respuestaChar;
     }
 }
 

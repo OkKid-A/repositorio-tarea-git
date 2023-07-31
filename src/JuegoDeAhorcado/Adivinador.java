@@ -14,7 +14,7 @@ public class Adivinador {
     }
 
     public void separarPalabra(){
-        letrasRespuesta= palabraRespuesta.toCharArray();
+        letrasRespuesta= palabraRespuesta.toLowerCase().toCharArray();
         letrasAdivinadas = new char[letrasRespuesta.length];
         letrasAdivinadas[0] = '_';
         for (int i = 0; i < letrasRespuesta.length; i++){

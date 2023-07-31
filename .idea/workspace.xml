@@ -7,10 +7,16 @@
     <list default="true" id="db714358-4041-47bc-ac1b-b4deb82c6cb6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Juegos/Herramientas/Lector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/Herramientas/Lector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoDeCartas/JuegoDeCartas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoDeCartas/JuegoDeCartas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Juegos/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoAhorcado/MenuAhorcado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoAhorcado/MenuAhorcado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoCartas/MenuCartas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoCartas/MenuCartas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoDeAhorcado/Adivinador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoDeAhorcado/Adivinador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoDeAhorcado/JuegoDeAhorcado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoDeAhorcado/JuegoDeAhorcado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Juegos/MenuPrincipalOpciones.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Herramientas/Lector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Herramientas/Lector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JuegoAhorcado/MenuAhorcado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoAhorcado/MenuAhorcado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JuegoCartas/MenuCartas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoCartas/MenuCartas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JuegoDeAhorcado/Adivinador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoDeAhorcado/Adivinador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JuegoDeAhorcado/JuegoDeAhorcado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoDeAhorcado/JuegoDeAhorcado.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +55,10 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -58,7 +67,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="JAR Application.Juegos.jar">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Juegos" />
@@ -74,8 +83,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Juegos.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Juegos_jar/Juegos.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.Juegos.jar" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
@@ -91,7 +105,7 @@
       <updated>1690761109226</updated>
       <workItem from="1690761110334" duration="2476000" />
       <workItem from="1690763604490" duration="1403000" />
-      <workItem from="1690765014192" duration="10487000" />
+      <workItem from="1690765014192" duration="15007000" />
     </task>
     <servers />
   </component>
@@ -113,19 +127,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JuegoDeAhorcado/JuegoDeAhorcado.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JuegoDeAhorcado/JuegoDeAhorcado.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/JuegoDeAhorcado/Adivinador.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/Herramientas/Lector.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

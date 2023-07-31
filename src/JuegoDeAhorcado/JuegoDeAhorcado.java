@@ -27,15 +27,15 @@ public class JuegoDeAhorcado {
     }
 
     public void correrJuego(){
-        while (errores <= 5){
+        while (errores <= 5 && !fin ){
             seleccionarModo();
         }
         finDelJuego();
     }
 
     public void seleccionarModo(){
-        int respuesta = lector.getDigit("Elige lo que quieres adivinar: \n1. Letra. \n2.Palabra.",2);
-        System.out.println(respuesta);
+        int respuesta;
+        respuesta = lector.getDigit("Elige lo que quieres adivinar: \n1. Letra. \n2.Palabra.",2);
         if (respuesta == 1){
             if (adivinador.adivinarLetra(lector.getChar("Ingresa una de las letras que estan en la palabra."))){
                 System.out.println("Buen trabajo! Adivinaste una letra!");
