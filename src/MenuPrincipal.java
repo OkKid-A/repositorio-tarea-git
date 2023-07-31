@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class MenuPrincipal {
+
+
     public static void menuJuegos(){
         Scanner sn = new Scanner(System.in);
 
