@@ -1,7 +1,5 @@
 package JuegoBasketball;
 
-import JuegoAhorcado.MenuAhorcado;
-
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;

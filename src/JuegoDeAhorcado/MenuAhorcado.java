@@ -1,4 +1,4 @@
-package JuegoAhorcado;
+package JuegoDeAhorcado;
 
 import JuegoDeAhorcado.JuegoDeAhorcado;
 

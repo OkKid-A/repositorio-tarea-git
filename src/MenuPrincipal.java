@@ -1,6 +1,6 @@
-import JuegoAhorcado.MenuAhorcado;
+import JuegoDeAhorcado.MenuAhorcado;
 import JuegoBasketball.MenuBasketball;
-import JuegoCartas.MenuCartas;
+import JuegoDeCartas.MenuCartas;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

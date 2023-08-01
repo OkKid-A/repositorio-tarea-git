@@ -1,4 +1,4 @@
-package JuegoCartas;
+package JuegoDeCartas;
 
 import JuegoDeCartas.JuegoDeCartas;
 
