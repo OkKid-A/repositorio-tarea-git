@@ -47,17 +47,17 @@ private char respuestaChar;
         String respuestaBruta;
         int respuesta = 0;
         System.out.println(pregunta);
+        scanner = new Scanner(System.in);
         try{
-            respuestaBruta = scanner.nextLine();
-            respuesta = Integer.parseInt(respuestaBruta);
-            if(respuesta < limite || respuesta > 10000){
+            this.respuesta = scanner.nextInt();
+            if(this.respuesta < limite || this.respuesta > 10000){
                 throw new ArithmeticException("El numero no es valido.");
             }
         } catch(Exception e){
             System.out.println("El dato no es aceptable");
-            getDigit(pregunta);
+            getDigitMin(pregunta,limite);
         }
-        return respuesta;
+        return this.respuesta;
     }
 
     public String getString(String pregunta){

@@ -4,6 +4,9 @@ import java.util.Random;
 
 public class Casino {
 
+    private int cartaMenor;
+    private int cartaMayor;
+    private int cartaCorrecta;
     private Random azar;
     public Casino(){
         this.azar = new Random();
@@ -16,10 +19,30 @@ public class Casino {
 
     public void ordernarCartas(int cartaMayor, int cartaMenor){
         int cartaMedia = 0;
+        this.cartaMayor = cartaMayor;
+        this.cartaMenor = cartaMenor;
         if(cartaMayor < cartaMenor){
             cartaMedia = cartaMayor;
-            cartaMayor = cartaMenor;
-            cartaMenor = cartaMedia;
+            this.cartaMayor = cartaMenor;
+            this.cartaMenor = cartaMedia;
         }
     }
+
+    public int compararCartas(int carta){
+        this.cartaCorrecta = producirValorAzar();
+        if (carta == this.cartaCorrecta){
+            compararCartas(carta);
+        }
+        return this.cartaCorrecta;
+    }
+
+    public int getCartaMayor() {
+        return cartaMayor;
+    }
+
+    public int getCartaMenor() {
+        return cartaMenor;
+    }
+
+
 }

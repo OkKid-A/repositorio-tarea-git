@@ -30,7 +30,7 @@ public class Dibujante {
     public String traducirRandom(int azar){
         switch (azar){
             case 0:
-                return "1";
+                return "A";
             case 1:
                 return "2";
             case 2:

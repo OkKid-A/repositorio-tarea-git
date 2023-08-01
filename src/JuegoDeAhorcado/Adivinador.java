@@ -13,6 +13,16 @@ public class Adivinador {
         separarPalabra();
     }
 
+    public boolean revisarErrores(){
+        boolean gano = true;
+        for (int i = 0; i < palabraRespuesta.length();i++){
+            if (letrasAdivinadas[i] == '_'){
+                gano = false;
+            }
+        }
+        return gano;
+    }
+
     public void separarPalabra(){
         letrasRespuesta= palabraRespuesta.toLowerCase().toCharArray();
         letrasAdivinadas = new char[letrasRespuesta.length];

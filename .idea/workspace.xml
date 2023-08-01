@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Juegos:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db714358-4041-47bc-ac1b-b4deb82c6cb6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Juegos_jar/Juegos.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Juegos_jar/Juegos.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Juegos/Herramientas/Lector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/Herramientas/Lector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoAhorcado/MenuAhorcado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoAhorcado/MenuAhorcado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoCartas/MenuCartas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoCartas/MenuCartas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoDeAhorcado/Adivinador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoDeAhorcado/Adivinador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoDeAhorcado/JuegoDeAhorcado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoDeAhorcado/JuegoDeAhorcado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Juegos/MenuPrincipalOpciones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoDeCartas/Casino.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoDeCartas/Casino.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoDeCartas/Dibujante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoDeCartas/Dibujante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Juegos/JuegoDeCartas/JuegoDeCartas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Juegos/JuegoDeCartas/JuegoDeCartas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Herramientas/Lector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Herramientas/Lector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JuegoAhorcado/MenuAhorcado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoAhorcado/MenuAhorcado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JuegoCartas/MenuCartas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoCartas/MenuCartas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JuegoDeAhorcado/Adivinador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoDeAhorcado/Adivinador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JuegoDeAhorcado/JuegoDeAhorcado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoDeAhorcado/JuegoDeAhorcado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JuegoDeCartas/Casino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoDeCartas/Casino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JuegoDeCartas/Dibujante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoDeCartas/Dibujante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JuegoDeCartas/JuegoDeCartas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JuegoDeCartas/JuegoDeCartas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.Juegos.jar" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="JAR Application.Juegos.jar" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -105,7 +112,7 @@
       <updated>1690761109226</updated>
       <workItem from="1690761110334" duration="2476000" />
       <workItem from="1690763604490" duration="1403000" />
-      <workItem from="1690765014192" duration="15007000" />
+      <workItem from="1690765014192" duration="19586000" />
     </task>
     <servers />
   </component>
@@ -122,17 +129,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Herramientas/Lector.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/repositorio_tarea_git$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1690765335408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

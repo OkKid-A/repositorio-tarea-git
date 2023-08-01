@@ -24,15 +24,17 @@ public class JuegoDeCartas {
     }
 
     public void iniciarJuego(){
+        imprimirInstrucciones();
         dinero = lector.getDigitMin("Cuanto dinero tendra el jugador?", 151);
         System.out.println("Empezando el juego:");
         barajar();
     }
 
     public void barajar(){
+        System.out.println("Monedas actuales: " + dinero);
         System.out.println("Barajando...");
         carta1 = casino.producirValorAzar();
-        carta2 = casino.producirValorAzar();
+        carta2 = casino.compararCartas(carta1);
         dibujante.dibujarCarta(dibujante.traducirRandom(carta1));
         dibujante.dibujarCarta(dibujante.traducirRandom(carta2));
         apostar();
@@ -45,13 +47,13 @@ public class JuegoDeCartas {
             System.out.println("Tu carta es:");
             dibujante.dibujarCarta(dibujante.traducirRandom(cartaJugador));
             casino.ordernarCartas(carta1,carta2);
-            if (carta1 > cartaJugador && carta2 < cartaJugador){
+            if (casino.getCartaMayor() > cartaJugador && casino.getCartaMenor() < cartaJugador){
                 dinero += 50;
-                System.out.println("Has ganado! Ahora tienes " + dinero + " monedas!");
+                System.out.println("Has ganado 50 monedas!");
                 barajar();
             } else if(dinero > 150){
                 dinero -= 150;
-                System.out.println("Has perdido... Ahora tienes " + dinero + " monedas.");
+                System.out.println("Has perdido 150 monedas...");
                 barajar();
             } else {
                 System.out.println("Te has quedado sin dinero... \n Juego Terminado");
@@ -61,5 +63,11 @@ public class JuegoDeCartas {
         }
     }
 
-
+    public void imprimirInstrucciones(){
+        System.out.println("\nEn el juego de Cartas primero debes definir el dinero que tendras (siempre debe ser menor a " +
+                "100000).\nLuego nuestro casino te barajara dos cartas, puedes decidir si apostar o no con esas dos cartas.\n" +
+                "Si apuestas, nuestro casino te barajara una nueva carta y ganaras 50 monedas si el valor de tu carta esta " +
+                "\nentre las dos del casino, si pierdes la apuesta perderas 150 monedas!\nEl juego termina cuando te quedas sin dinero\n");
+        lector.getDigit("1. Continuar",1);
+    }
 }
