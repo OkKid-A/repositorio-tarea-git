@@ -26,7 +26,7 @@ public class MenuPrincipal {
             System.out.println("|                                                    |");
             System.out.println("|   4 - Salir.                                       |");
             System.out.println("|                                                    |");
-            System.out.println("|   Hecho por 201830233.                             |");
+            System.out.println("|   Hecho por 201830233 y 202031398                  |");
             System.out.println("|                                                    |");
             System.out.println("|****************************************************|");
 
